@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calculator-container">
+        <div class="display-container">
+            <p class="display-pre-text" id="display-secondary-text"></p>
+            <h1 class="display-main-text" id="display-main-text">0.0</h1>
+        </div>
+
+        <div class="keys-container">
+            <input type="button" onclick="clicked(this.id)" value="AC" class="button" id="ac">
+            <input type="button" onclick="clicked(this.id)" value="DEL" class="button" id="del">
+            <input type="button" onclick="clicked(this.id)" value="&#247" class="button" id="dev">
+            <input type="button" onclick="clicked(this.id)" value="7" class="button" id="btn-7">
+            <input type="button" onclick="clicked(this.id)" value="8" class="button" id="btn-8">
+            <input type="button" onclick="clicked(this.id)" value="9" class="button" id="btn-9">
+            <input type="button" onclick="clicked(this.id)" value="*" class="button" id="mul">
+            <input type="button" onclick="clicked(this.id)" value="4" class="button" id="btn-4">
+            <input type="button" onclick="clicked(this.id)" value="5" class="button" id="btn-5">
+            <input type="button" onclick="clicked(this.id)" value="6" class="button" id="btn-6">
+            <input type="button" onclick="clicked(this.id)" value="+" class="button" id="add">
+            <input type="button" onclick="clicked(this.id)" value="1" class="button" id="btn-1">
+            <input type="button" onclick="clicked(this.id)" value="2" class="button" id="btn-2">
+            <input type="button" onclick="clicked(this.id)" value="3" class="button" id="btn-3">
+            <input type="button" onclick="clicked(this.id)" value="-" class="button" id="sub">
+            <input type="button" onclick="clicked(this.id)" value="." class="button" id="dot">
+            <input type="button" onclick="clicked(this.id)" value="0" class="button" id="btn-0">
+            <input type="button" onclick="clicked(this.id)" value="=" class="button" id="eql">
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

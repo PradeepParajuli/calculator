@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ /* variables */
+ :root{
+     --dark-background-color: linear-gradient(to right,rgb(148, 255, 172),rgb(0, 225, 255));
+     --display-text-color: white;
+     --display-background-color: black;
+ }
+
+ /* ------- */
+
+body{
+    background-image: var(--dark-background-color);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator-container{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.display-container{
+    position: relative;
+    background-color: var(--display-background-color);
+    width: inherit;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    word-wrap: break-word;
+}
+
+.display-pre-text{
+    position: relative;
+    /* background-color: crimson; */
+    width: auto;
+    height: 30%;
+    font-size: 0.8em;
+    text-align: right;
+    margin: 2%;
+    margin-top: 5%;
+    color: var(--display-text-color);
+}
+
+.display-main-text{
+    position: relative;
+    /* background-color: crimson; */
+    width: auto;
+    height: 30%;
+    font-size: 1.1em;
+    text-align: right;
+    margin: 0 2%;
+    color: var(--display-text-color);
+}
+
+.keys-container{
+    position: relative;
+    background-color: rgba(147, 243, 219, 0.062);
+    width: inherit;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 2px;
+}
+
+.button{
+    background-color: rgba(176, 253, 236, 0.945);
+    border: 0px;
+    font-size: 1.1em;
+}
+
+#ac{
+    background-color: rgba(255, 142, 142, 0.911);
+}
+#eql{
+    background-color: rgba(66, 132, 255, 0.911);
+}
+ /* ------keys-----  */
+#ac{
+    grid-column: span 2;
+    grid-row: 1;
+}
+#del{
+    grid-column: span 1;
+    grid-row: 1;
+}
+#dev{
+    grid-column: span 1;
+    grid-row: 1;
+}
+#btn-7{
+    grid-column: span 1;
+    grid-row: 2;
+}
+#btn-8{
+    grid-column: span 1;
+    grid-row: 2;
+}
+#btn-9{
+    grid-column: span 1;
+    grid-row: 2;
+}
+#mul{
+    grid-column: span 1;
+    grid-row: 2;
+}
+#btn-4{
+    grid-column: span 1;
+    grid-row: 3;
+}
+#btn-5{
+    grid-column: span 1;
+    grid-row: 3;
+}
+#btn-6{
+    grid-column: span 1;
+    grid-row: 3;
+}
+#add{
+    grid-column: span 1;
+    grid-row: 3;
+}
+#btn-1{
+    grid-column: span 1;
+    grid-row: 4;
+}
+
+#btn-2{
+    grid-column:  span 1;
+    grid-row: 4;
+}
+#btn-3{
+    grid-column: span 1;
+    grid-row: 4;
+}
+#sub{
+    grid-column: span 1;
+    grid-row: 4;
+}
+#dot{
+    grid-column: span 1;
+    grid-row: 5;
+}
+#btn-0{
+    grid-column: span 1;
+    grid-row: 5;
+}
+#eql{
+    grid-column: span 2;
+    grid-row: 5;
+}
+
+
+  /* ---- other porperties ---- */
+.button:hover{
+    background-color: transparent;
+    font-size: 1.3em;
+}
+
+
+
+
+
